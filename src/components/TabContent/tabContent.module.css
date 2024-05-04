@@ -42,7 +42,12 @@
   line-height: 20px;
   margin: 13px 0 13px 0;
   padding-left: 10px;
-  overflow-x: scroll;
+}
+
+@media screen and (max-width: 400px) {
+  .tabsBloks {
+    overflow-x: scroll;
+  }
 }
 
 .tabsBloks li:not(:last-child) {
