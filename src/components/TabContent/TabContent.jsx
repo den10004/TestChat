@@ -3,20 +3,11 @@ import Tabs from "../Tabs/Tabs";
 import styles from "./tabContent.module.css";
 import DropDown from "../DropDown";
 
-import { Contents } from "../../itemsIF";
-
-function TabContent(items: {
-  contents: Contents;
-  photo: string | undefined;
-  name: string;
-  old: string;
-  gender: string;
-}) {
+function TabContent(items) {
   const tabs = items.contents;
 
   const [active, setActive] = useState(0);
-  const openTab = (e: { target: { dataset: { index: string | number } } }) =>
-    setActive(+e.target.dataset.index);
+  const openTab = (e) => setActive(+e.target.dataset.index);
 
   return (
     <div className={styles.tabWrapper}>

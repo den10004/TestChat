@@ -1,25 +1,11 @@
 import DropDown from "../DropDown";
 import styles from "./Tabs.module.css";
 
-interface Itabs {
-  type: string;
-  data: string;
-  noteContent: string;
-  card: string;
-  cons: string;
-  title: string;
-  status: string;
-  img: string | undefined;
-  description: string;
-  act: string;
-  time: string;
-}
-
 function Tabs({ items }) {
   return (
     <div className={styles.tabs}>
-      {items.map((n: Itabs, i: number) => (
-        <div key={i}>
+      {items.map((n) => (
+        <div key={n.i}>
           {n.type === "notes" && (
             <div className={styles.notesWrap}>
               <div className={styles.notes}>

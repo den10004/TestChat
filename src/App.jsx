@@ -7,8 +7,7 @@ import "./App.css";
 
 function App() {
   const [active, setActive] = useState(0);
-  const openTab = (e: { target: { dataset: { index: string | number } } }) =>
-    setActive(+e.target.dataset.index);
+  const openTab = (e) => setActive(+e.target.dataset.index);
 
   return (
     <div className="main">
