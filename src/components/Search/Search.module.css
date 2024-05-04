@@ -1,0 +1,70 @@
+.search {
+  position: relative;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+input {
+  border-radius: 20px;
+  background: rgb(241, 242, 243);
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgb(241, 242, 243);
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: center center;
+  transition-duration: 0.15s;
+  z-index: 5;
+}
+
+input:hover,
+input:focus {
+  cursor: text;
+  text-indent: 0;
+  outline: none;
+  border: 1px solid rgb(241, 242, 243);
+  background: rgb(255, 255, 255);
+  width: 258px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+}
+
+.blockRing {
+  padding: 0 !important;
+  width: 78px !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+}
+
+.blockRing > div {
+  width: 34px !important;
+  height: 34px !important;
+  background: rgb(241, 242, 243) !important;
+  border-radius: 50% !important;
+  z-index: 1;
+}
+
+.blockRing > div:first-child {
+  margin-right: 10px;
+}
+
+.blockRing > div:hover {
+  background: rgb(65, 152, 197) !important;
+}
+
+.blockRing > div:hover path {
+  fill: rgb(255, 255, 255);
+}

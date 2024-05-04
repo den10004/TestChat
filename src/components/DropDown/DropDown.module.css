@@ -1,0 +1,40 @@
+.btnDropdown {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding-bottom: 7px;
+  border: none;
+  background: none;
+}
+
+.btnDropdown:hover {
+  background: rgb(65, 152, 197);
+}
+
+.btnDropdown:hover > svg > path {
+  fill: rgb(255, 255, 255);
+}
+
+.dropdownList {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 16px 0px rgba(34, 34, 34, 0.16);
+  background: rgb(255, 255, 255);
+  color: rgb(22, 23, 24);
+  font-family: "SF Pro Display", sans-serif;
+  width: 230px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  z-index: 5;
+}
+
+.dropList:hover {
+  background: #f1f2f4;
+}
+
+.dropList > p {
+  padding: 15px 0 15px 20px;
+}
