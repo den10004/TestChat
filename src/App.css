@@ -8,6 +8,12 @@
   margin-top: 0px;
 }
 
+@media screen and (max-width: 767px) {
+  .tab {
+    margin-right: 0px;
+  }
+}
+
 .tab div {
   border: none;
   cursor: pointer;
@@ -27,12 +33,24 @@
   line-height: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  .tab div {
+    width: 100%;
+  }
+}
+
 .main {
   display: flex;
   margin: 0 auto;
-  width: 1140px;
+  max-width: 1140px;
   height: 87vh;
   background: rgb(241, 242, 243);
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    flex-direction: column;
+  }
 }
 
 .tabBlocklinks.active {

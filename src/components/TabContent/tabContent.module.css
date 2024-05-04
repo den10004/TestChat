@@ -42,6 +42,7 @@
   line-height: 20px;
   margin: 13px 0 13px 0;
   padding-left: 10px;
+  overflow-x: scroll;
 }
 
 .tabsBloks li:not(:last-child) {
@@ -49,14 +50,33 @@
   padding-right: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .tabsBloks li:not(:last-child) {
+    padding-right: 5px;
+  }
+}
+
 .tabsBloks li:not(:first-child) {
   padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .tabsBloks li:not(:last-child) {
+    padding-left: 5px;
+  }
 }
 
 .tabsWrap {
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .tabsWrap {
+    flex-direction: column;
+  }
 }
 
 .recomend {
@@ -76,6 +96,12 @@
   height: 26px;
   margin-left: 10px;
   padding-top: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+  .recomend > button {
+    margin-left: 0px;
+  }
 }
 
 .recomend > button:hover {
