@@ -1,2 +1,2 @@
-# React + TypeScript + Vite. Тестовое задание
+# React. Тестовое задание
 
